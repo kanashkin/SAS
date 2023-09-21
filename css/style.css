@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gilroy';
 }
 
 button {
@@ -17,4 +18,117 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-flex;
 }
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1316px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf') format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf') format(truetype);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf') format(truetype);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf') format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Promo */
+
+.promo, .header {
+    background: linear-gradient(92.88deg, 
+    rgba(245, 22, 107, 0.1) 1.73%,
+    rgba(237, 105, 35, 0.1) 100%);
+}
+
+.header {
+    height: 88px;
+}
+
+.header__wrapper {
+    width: 100%;
+    height: inherit;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__block {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav {
+    height: 30px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__list-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__phone {
+    color: #8B8986;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.header__button {
+    width: 169px;
+    height: 40px;
+    border-radius: 40px;
+    background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
+    box-shadow: 10px 10px 23px 0px rgba(166, 180, 200, 0.20);
+    /* Button text */
+    color: #FEF5FC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+}
+
