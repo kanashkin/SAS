@@ -61,7 +61,7 @@ li {
     font-style: normal;
 }
 
-/* Promo */
+/* Header */
 
 .promo, .header {
     background: linear-gradient(92.88deg, 
@@ -132,3 +132,81 @@ li {
     letter-spacing: 0.32px;
 }
 
+/* Promo */
+
+.promo {
+    padding: 80px 0;
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.promo__title {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 110%;
+    background: linear-gradient(105deg, #F5166B 8.24%, #ED6923 51.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promo__title span {
+    font-weight: 800;
+}
+
+.promo__subtitle {
+    margin-top: 40px;
+    color: #1A1A18;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.promo__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 130px;
+}
+
+.promo__list-item {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 125%;
+    position: relative;
+    margin-left: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.promo__list-item::before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: url('../img/promo/check.svg') center center / cover no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80px;
+}
+
+.promo__image {
+    position: relative;
+    border-radius: 80px;
+    width: 498px;
+    height: 520px;
+    border-radius: 80px;
+    background: #FFF;
+}
+
+.promo__image img {
+    position: absolute;
+    right: 0;
+}
