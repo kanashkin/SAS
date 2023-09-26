@@ -37,5 +37,20 @@ const contextMenu = () => {
     })
 }
 
+const additionalySwiper = new Swiper('.swiper-additionaly', {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        prevEl: '.swiper-left',
+        nextEl: '.swiper-right'
+    },
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination'
+    }
+})
+
 servicesAnimation()
 contextMenu()
