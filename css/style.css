@@ -61,6 +61,20 @@ li {
     font-style: normal;
 }
 
+/* Common */
+.title {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.gradient-text {
+    background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Header */
 
 .promo, .header {
@@ -209,4 +223,126 @@ li {
 .promo__image img {
     position: absolute;
     right: 0;
+}
+
+/* Services */
+.services {
+    padding-top: 80px;
+}
+
+.services__wrapper {
+    display: flex;
+}
+
+.animation__block {
+    margin-top: 180px;
+    width: 736px;
+    height: 577px;
+    background: url('../img/services/common_bg.png') center center / cover no-repeat;
+    position: relative;
+    transition: .4s ease;
+}
+
+.animation-trigger {
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    opacity: .4;
+    transition: .4s ease;
+}
+
+.animation-trigger:hover {
+    opacity: 1;
+}
+
+.development-trigger {
+    top: 0;
+    left: 121px;
+}
+
+
+.seo-trigger {
+    left: 0;
+    top: 130px;
+}
+
+.design-trigger {
+    left: 0;
+    bottom: 203px;
+}
+
+.ppc-trigger {
+    left: 120px;
+    bottom: 0;
+}
+
+.services .content__block {
+    max-width: 521px;
+}
+
+.services-title {
+    font-weight: 700;
+}
+
+.services__cards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.services-card {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #F1E8EF;
+    background: rgba(245, 237, 243, 0.30);
+    cursor: pointer;
+}
+
+.services-card:first-child {
+    margin-top: 0;
+}
+
+.services-card__block {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.context__menu {
+    margin-top: 0;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.context__menu.active {
+    margin-top: 20px;
+    opacity: 1;
+    z-index: 1;
+    max-height: 200px;
+}
+
+.services-card__arrow {
+    transition: .4s ease;
+}
+
+.services-card__arrow.active {
+    rotate: -180deg;
+}
+
+.services-card__title,
+.context__menu-item {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
 }
