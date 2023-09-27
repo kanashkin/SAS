@@ -231,7 +231,7 @@ li {
 
 .footer__wrapper {
     display: flex;
-    gap: 10%;
+    gap: 13%;
     align-items: flex-start;
     position: relative;
 }
@@ -628,4 +628,19 @@ li {
     line-height: 150%;
     letter-spacing: 0.56px;
     color: #fff;
+}
+
+/* end */
+.end {
+    height: 586px;
+    position: relative;
+}
+
+.end img {
+    width: 760px;
+    height: 650px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-43%) rotate(14deg);
 }
