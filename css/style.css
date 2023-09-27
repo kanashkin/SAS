@@ -18,6 +18,8 @@ button {
     background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
     box-shadow: 10px 10px 23px 0px rgba(166, 180, 200, 0.20);
     transition: .2s linear;
+    color: #fff;
+    font-weight: 500;
 }
 
 button:hover {
@@ -126,7 +128,9 @@ li {
 }
 
 .nav__list-item,
-.dropdown__menu-item {
+.dropdown__menu-item,
+.footer-nav__list-item,
+.footer-dropdown__menu-item {
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -143,7 +147,9 @@ li {
 }
 
 .nav__list-item:hover,
-.dropdown__menu-item:hover {
+.dropdown__menu-item:hover,
+.footer-nav__list-item:hover,
+.footer-dropdown__menu-item:hover {
     background-position: 0 100%;
 }
 
@@ -215,6 +221,124 @@ li {
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.32px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(93deg, rgba(245, 22, 107, 0.10) 1.73%, rgba(237, 105, 35, 0.10) 100%);
+    padding: 80px 0 80px;
+}
+
+.footer__wrapper {
+    display: flex;
+    gap: 10%;
+    align-items: flex-start;
+    position: relative;
+}
+
+.footer__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-nav {
+    max-width: 304px;
+}
+
+.footer .logo {
+    width: 290px;
+    height: 120.143px;
+}
+
+.branding__title {
+    color: #1A1A18;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.19px;
+}
+
+.footer__button {
+    margin-top: 60px;
+    width: 303px;
+    height: 50px;
+    /* Button text */
+    font-size: 20px;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-nav__list-item,
+.contacts__title,
+.socials__title {
+    color: #1A1A18;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.footer-dropdown__menu {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-dropdown__menu-item,
+.footer-phone,
+.footer-mail {
+    color: #1A1A18;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.contacts__block {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials__block {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.socials__block-item {
+    transition: .2s linear;
+}
+
+.socials__block-item:hover {
+    opacity: .7;
+}
+
+.contacts .socials__block {
+    margin-top: 40px;
+}
+
+.socials .socials__block {
+    margin-top: 15px;
+}
+
+.info {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    gap: 20px;
+    color: rgba(43, 42, 41, 0.15);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
 }
 
 /* Promo */
