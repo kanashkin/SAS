@@ -368,11 +368,19 @@ li {
 }
 
 .promo__subtitle {
+    max-width: 760px;
     margin-top: 40px;
     color: #1A1A18;
     font-size: 36px;
     font-weight: 400;
     line-height: 130%;
+}
+
+.promo__button {
+    margin-top: 80px;
+    width: 454px;
+    height: 70px;
+    font-size: 28px;
 }
 
 .promo__list {
