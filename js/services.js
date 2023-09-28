@@ -6,13 +6,13 @@ const servicesAnimation = () => {
         item.addEventListener('mouseenter', () => {
             let folder
             if (item.classList.contains('development-trigger')) {
-                folder = 'development'
+                folder = 'services/development'
             } else if (item.classList.contains('seo-trigger')) {
-                folder = 'seo'
+                folder = 'services/seo'
             } else if (item.classList.contains('design-trigger')) {
-                folder = 'design'
+                folder = 'services/design'
             } else if (item.classList.contains('ppc-trigger')) {
-                folder = 'ppc'
+                folder = 'services/ppc'
             }
 
             animationBlock.style.background = `url('../img/services/${folder}/bg.png') center center / cover no-repeat`
