@@ -1,29 +1,11 @@
-.google-conditions {
-    padding-top: 120px;
-}
-
-.google-conditions__wrapper {
-    margin-top: 80px;
-    display: flex;
-    gap: 20px;
-}
-
-.conditions-type {
-    padding: 40px;
-}
-
-.conditions-type-text {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 130%;
-}
+/* Conditions */
 
 .conditions__list {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 736px;
 }
 
 .conditions__list-item {
@@ -45,22 +27,6 @@
     background: url('../img/replenishment/conditions/dot.svg') center center / cover no-repeat;
 }
 
-.course__banner {
-    padding: 20px 40px;
-    margin-top: 40px;
-    width: 100%;
-    border-radius: 20px;
-    background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
-}
-
-.course__banner-text {
-    color: #FFF;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 130%;
-}
-
 .conditions__banner {
     padding: 20px 40px;
     border-radius: 20px;
@@ -77,6 +43,72 @@
     line-height: 130%;
 }
 
+/* Google Conditions */
+
+.google-conditions {
+    padding-top: 120px;
+}
+
+.google-conditions__wrapper {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.conditions-type {
+    padding: 40px;
+}
+
+.conditions-type-text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.course__banner {
+    padding: 20px 40px;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
+}
+
+.course__banner-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
 .google-conditions .conditions__banner {
     margin-top: 80px;
+}
+
+/* Yandex Conditions */
+
+.yandex-conditions {
+    padding-top: 120px;
+}
+
+.yandex-conditions .conditions__banner {
+    max-width: 736px;
+    margin-top: 40px;
+}
+
+.yandex-conditions .container {
+    position: relative;
+}
+
+.yandex-conditions .content {
+    position: relative;
+    z-index: 5;
+}
+
+.yandex-conditions-image {
+    position: absolute;
+    bottom: 0;
+    right: -132px;
+    z-index: 4;
 }
