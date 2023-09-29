@@ -80,6 +80,10 @@ li {
     line-height: 130%;
 }
 
+.title span {
+    font-weight: 800;
+}
+
 .gradient-text {
     background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
     background-clip: text;
