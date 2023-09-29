@@ -70,9 +70,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 40px;
-    border: 1px solid #F1E8EF;
-    background: rgba(245, 237, 243, 0.30);
     cursor: pointer;
 }
 
@@ -131,9 +128,6 @@
 
 .additionaly-card {
     padding: 50px 20px;
-    border-radius: 40px;
-    border: 1px solid var(--Stroke, #F1E8EF);
-    background: rgba(245, 237, 243, 0.30);
     display: flex;
     flex-direction: column;
     gap: 20px;

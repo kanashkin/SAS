@@ -9,8 +9,6 @@
 .descr__block {
     padding: 40px 50px;
     border-radius: 30px;
-    border: 1px solid #F1E8EF;
-    background: rgba(245, 237, 243, 0.30);
 }
 
 .descr__block-text {
@@ -56,9 +54,6 @@
     padding: 50px 20px 20px;
     height: 591px;
     width: 412px;
-    border-radius: 40px;
-    border: 1px solid #F1E8EF;
-    background: rgba(245, 237, 243, 0.30);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -144,9 +139,6 @@
 
 .price__card {
     padding: 40px;
-    border-radius: 40px;
-    border: 1px solid #F1E8EF;
-    background: rgba(245, 237, 243, 0.30);
     width: fit-content;
     display: flex;
     gap: 20px;

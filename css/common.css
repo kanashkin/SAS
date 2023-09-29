@@ -93,6 +93,12 @@ li {
     rgba(237, 105, 35, 0.1) 100%);
 }
 
+.card-block {
+    border-radius: 40px;
+    border: 1px solid #F1E8EF;
+    background: rgba(245, 237, 243, 0.30);
+}
+
 /* Header */
 
 .header {
