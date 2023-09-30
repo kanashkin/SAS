@@ -223,6 +223,36 @@
     cursor: pointer;
 }
 
+@media (max-width: 576px) {
+    .additionaly {
+        padding: 70px 0;
+    }
+
+    .swiper-additionaly {
+        margin-top: 30px;
+    }
+    .additionaly-card {
+        padding: 30px 20px;
+        height: auto;
+    }
+    .additionaly-card__title {
+        font-size: 22px;
+        margin-top: -8px;
+    }
+    .additionaly-card__text {
+        font-size: 18px;
+    }
+    .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+    }
+    .swiper-right,
+    .swiper-left {
+        width: 50px;
+        height: 30px;
+    }
+}
+
 /* Consultation */
 .consultation {
     padding: 120px 0;

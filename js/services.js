@@ -38,7 +38,7 @@ const contextMenu = () => {
 }
 
 const additionalySwiper = new Swiper('.swiper-additionaly', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 20,
     loop: true,
@@ -49,6 +49,11 @@ const additionalySwiper = new Swiper('.swiper-additionaly', {
     pagination: {
         clickable: true,
         el: '.swiper-pagination'
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 3
+        }
     }
 })
 
