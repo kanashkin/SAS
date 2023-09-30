@@ -3,7 +3,6 @@ let examplesSwiper = null
 const createSwiper = () => {
     examplesSwiper = new Swiper('.swiper-examples', {
         slidesPerView: 1,
-        loop: true,
         navigation: {
             prevEl: '.swiper-left',
             nextEl: '.swiper-right'
