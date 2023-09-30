@@ -279,3 +279,43 @@
     letter-spacing: 0.56px;
     color: #fff;
 }
+
+.consultation_bg {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .consultation {
+        padding: 0;
+        padding-top: 70px;
+        background: linear-gradient(92.88deg,rgba(245, 22, 107, 0.1) 1.73%, rgba(237, 105, 35, 0.1) 100%);
+    }
+    .consultation__subtitle {
+        font-size: 18px;
+    }
+    .consultation .container .consultation__button {
+        display: none;
+    }
+    .consultation_bg {
+        display: block;
+    }
+    .consultation__button {
+        width: 278px;
+        height: 42px;
+        margin: 0 0 0 20px;
+        font-size: 18px;
+    }
+    .consultation_bg {
+        margin-top: 40px;
+        height: 281px;
+        mix-blend-mode: multiply;
+    }
+    .consultation__image {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .consultation__image img {
+        align-self: flex-end;
+    }
+}

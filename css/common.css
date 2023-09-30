@@ -113,7 +113,6 @@ li {
 
 .header {
     height: 88px;
-    overflow: hidden;
 }
 
 .header__wrapper {
@@ -258,7 +257,7 @@ li {
         height: 40px; 
     }
     .burger-menu {
-        position: absolute;
+        position: fixed;
         z-index: 10;
         top: 0;
         right: -110%;
@@ -658,4 +657,10 @@ li {
     top: 80px;
     left: 50%;
     transform: translateX(-43%) rotate(14deg);
+}
+
+@media (max-width: 576px) {
+    .end {
+        display: none;
+    }
 }
