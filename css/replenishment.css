@@ -126,6 +126,9 @@
     .course__banner-text {
         font-size: 18px;
     }
+    .google-conditions .conditions__banner {
+        margin-top: 30px;
+    }
 } 
 
 /* Yandex Conditions */
@@ -241,4 +244,77 @@
     margin: 0 auto;
     margin-top: 60px;
     font-size: 28px;
+}
+
+@media (max-width: 576px) {
+    .advantages {
+        padding-top: 70px;
+    }
+    .advantages-title {
+        text-align: left;
+    }
+    .advantages__items {
+        background: none;
+        gap: 30px;
+        padding-top: 0;
+        margin-top: 30px;
+        height: auto;
+    }
+    .advantages__item {
+        max-width: 100%;
+        align-self: flex-start;
+        margin-bottom: 0 !important;
+    }
+    .advantages__item-title {
+        font-size: 18px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: 75px;
+    }
+    .advantages__item-title::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -75px;
+        width: 60px;
+        height: 100%;
+    }
+    .advantages__item:nth-child(1) .advantages__item-title::before {
+        background: url('../img/replenishment/advantages/item-1.svg')
+        center center / cover no-repeat;
+    }
+    .advantages__item:nth-child(2) .advantages__item-title::before {
+        background: url('../img/replenishment/advantages/item-2.svg')
+        center center / cover no-repeat;
+    }
+    .advantages__item:nth-child(3) .advantages__item-title::before {
+        background: url('../img/replenishment/advantages/item-3.svg')
+        center center / cover no-repeat;
+    }
+    .advantages__item:nth-child(4) .advantages__item-title::before {
+        background: url('../img/replenishment/advantages/item-4.svg')
+        center center / cover no-repeat;
+    }
+    .advantages__item-descr {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .advantages__banner {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .advantages__banner-text {
+        font-size: 18px;
+    }
+    .advantages__button {
+        width: 242px;
+        height: 42px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 18px;
+    }
 }
