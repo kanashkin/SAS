@@ -183,7 +183,8 @@
 
 @media (max-width: 576px) {
     .examples {
-        padding: 70px 0;
+        padding: 0;
+        padding-top: 70px;
     }
     .examples__title {
         text-align: left;
@@ -267,4 +268,45 @@
     right: 0;
     bottom: 0;
     z-index: 4;
+}
+
+@media (max-width: 576px) {
+    .price {
+        padding: 0;
+        padding-top: 70px;
+    }
+    .price__text {
+        margin-left: 0;
+        text-align: center;
+    }
+    .price__descr {
+        font-size: 18px;
+    }
+    .price__card {
+        padding: 30px 20px;
+        max-width: 100%;
+        width: auto;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .price__card-1 {
+        margin-top: 40px;
+    }
+    .price__card-2 {
+        margin-left: 0;
+    }
+    .price__card-title {
+        font-size: 28px;
+    }
+    .price__card-descr {
+        font-size: 18px;
+    }
+    .price__button {
+        margin-top: 40px;
+        margin-left: 0;
+        max-width: 100%;
+        height: 42px;
+        font-size: 18px;
+    }
 }
