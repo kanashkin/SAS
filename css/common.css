@@ -236,9 +236,6 @@ li {
 }
 
 @media (max-width: 576px) {
-    .promo, .services, .additionaly, .consultation, .end, .footer {
-        display: none;
-    }
     .nav, .header__contacts {
         display: none;
     }
@@ -441,6 +438,67 @@ li {
     font-size: 20px;
     font-weight: 500;
     line-height: 100%;
+}
+
+@media (max-width: 576px)  {
+    .footer {
+        padding: 60px 0 78px;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .info {
+        display: none;
+    }
+    .footer .logo {
+        width: 170px;
+        height: 70.267px;
+    }
+    .footer .logo img {
+        width: 100%;
+    }
+    .branding__title {
+        font-size: 12px;
+    }
+    .footer__button {
+        margin-top: 30px;
+        width: 280px;
+        height: 42px;
+        font-size: 18px;
+    }
+    .footer__block {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+    .footer-nav__list {
+        gap: 15px;
+    }
+    .footer-nav__list-item,
+    .contacts__title,
+    .socials__title {
+        font-size: 18px;
+    }
+    .footer-dropdown__menu-item,
+    .footer-phone,
+    .footer-mail {
+        font-size: 16px;
+    }
+    .contacts .socials__block {
+        margin: 0;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contacts__block {
+        margin-top: 0;
+    }
+    .socials__block {
+        max-width: 100%;
+    }
 }
 
 /* Promo */
