@@ -1,4 +1,4 @@
-/* Info */
+/* Descr */
 .descr__wrapper {
     max-width: 1600px;
     display: flex;
@@ -27,6 +27,35 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 130%;
+}
+
+@media (max-width: 576px) {
+    .descr {
+        padding-top: 70px;
+        position: relative;
+        overflow: hidden;
+    }
+    .descr__wrapper {
+        display: block;
+        padding: 0 20px;
+    }
+    .descr img {
+        position: absolute;
+        left: -120px;
+        top: -30px;
+        width: 195px;
+        height: 170px;
+        transform: rotate(155deg);
+    }
+    .descr__block {
+        padding: 30px 20px;
+    }
+    .descr__block-text {
+        font-size: 18px;
+    }
+    .descr__block-title {
+        font-size: 24px;
+    }
 }
 
 /* Process */
