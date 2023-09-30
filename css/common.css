@@ -643,6 +643,12 @@ li {
         width: 300px;
         height: 238.554px;
     }
+    .promo__button {
+        margin-top: 30px;
+        width: 278px;
+        height: 42px;
+        font-size: 18px;
+    }
 }
 /* end */
 .end {
