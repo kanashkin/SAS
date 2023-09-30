@@ -199,7 +199,6 @@ li {
     z-index: 5;
 }
 
-
 .header__contacts {
     display: flex;
     align-items: center;
@@ -232,6 +231,99 @@ li {
     letter-spacing: 0.32px;
 }
 
+.burger, .burger-menu {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .promo, .services, .additionaly, .consultation, .end, .footer {
+        display: none;
+    }
+    .nav, .header__contacts {
+        display: none;
+    }
+    .header {
+        height: 60px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .logo {
+        width: 96.552px;
+        height: 40px; 
+    }
+    .burger-menu {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: -110%;
+        display: block;
+        width: 100%;
+        padding: 0 20px 50px;
+        background: #fff;
+        transition: .3s linear;
+    }
+    .burger-menu.active {
+        right: 0;
+    }
+    .burger-menu__top {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid #F1E8EF;;
+    }
+    .burger-menu-close {
+        cursor: pointer;
+    }
+    .burger-menu .nav {
+        display: block;
+        margin-top: 20px;
+        height: auto;
+    }
+    .nav__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .dropdown__menu {
+        margin-top: -5px;
+        display: flex;
+        position: static;
+        padding: 0;
+        background: none;
+        opacity: 1;
+        z-index: 1;
+    }
+    .dropdown__menu-item {
+        font-size: 14px;
+    }
+    .burger-menu .header__contacts {
+        display: block;
+        margin-top: 40px;
+    }
+    .header__socials {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .header__socials-item {
+        height: 30px;
+        width: 30px;
+    }
+    .header__phone {
+        margin-top: 15px;
+        font-size: 16px;
+        display: block;
+    }
+    .header__button {
+        width: 195px;
+        height: 42px;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(93deg, rgba(245, 22, 107, 0.10) 1.73%, rgba(237, 105, 35, 0.10) 100%);
@@ -240,7 +332,7 @@ li {
 
 .footer__wrapper {
     display: flex;
-    gap: 13%;
+    gap: 136px;
     align-items: flex-start;
     position: relative;
 }
@@ -248,8 +340,9 @@ li {
 .footer__block {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .footer-nav {
