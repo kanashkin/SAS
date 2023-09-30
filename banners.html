@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAS Banners</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/banners.css">
 </head>
@@ -181,11 +182,18 @@
     <section class="examples">
         <div class="container">
             <div class="title examples__title gradient-text">Примеры баннеров:</div>
-            <div class="examples__banner-wrapper">
-                <img class="examples__banner" src="img/banners/examples/banner-1.png" alt="banner image">
-                <img class="examples__banner" src="img/banners/examples/banner-2.png" alt="banner image">
-                <img class="examples__banner" src="img/banners/examples/banner-3.png" alt="banner image">
-                <img class="examples__banner" src="img/banners/examples/banner-4.png" alt="banner image">
+            <div class="swiper swiper-examples">
+                <div class="examples__banner-wrapper swiper-wrapper">
+                    <img class="examples__banner swiper-slide" src="img/banners/examples/banner-1.png" alt="banner image">
+                    <img class="examples__banner swiper-slide" src="img/banners/examples/banner-2.png" alt="banner image">
+                    <img class="examples__banner swiper-slide" src="img/banners/examples/banner-3.png" alt="banner image">
+                    <img class="examples__banner swiper-slide" src="img/banners/examples/banner-4.png" alt="banner image">
+                </div>
+            </div>
+            <div class="swiper-control">
+                <img class="swiper-left" src="img/banners/examples/left.svg" alt="swiper left button">
+                <div class="swiper-pagination"></div>
+                <img class="swiper-right" src="img/banners/examples/right.svg" alt="swiper right button">
             </div>
         </div>
     </section>
@@ -296,7 +304,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/banners.js"></script>
     
 </body>
 </html>

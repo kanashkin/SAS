@@ -141,6 +141,7 @@
         padding: 30px 20px;
         height: auto;
         gap: 10px;
+        max-width: 100%;
     }
     .process__card-number {
         width: 180px;
@@ -178,6 +179,21 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+@media (max-width: 576px) {
+    .examples {
+        padding: 70px 0;
+    }
+    .examples__title {
+        text-align: left;
+        max-width: 90%;
+    }
+    .examples__banner-wrapper {
+        margin-top: 30px;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
 }
 
 /* Price */

@@ -196,28 +196,6 @@
     line-height: 140%;
 }
 
-.swiper-control {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.swiper-pagination {
-    position: static;
-}
-
-.swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #F1E8EF;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
-}
-
 .swiper-right,
 .swiper-left {
     cursor: pointer;
@@ -227,7 +205,6 @@
     .additionaly {
         padding: 70px 0;
     }
-
     .swiper-additionaly {
         margin-top: 30px;
     }
@@ -241,10 +218,6 @@
     }
     .additionaly-card__text {
         font-size: 18px;
-    }
-    .swiper-pagination-bullet {
-        width: 7px;
-        height: 7px;
     }
     .swiper-right,
     .swiper-left {
