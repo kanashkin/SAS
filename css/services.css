@@ -304,13 +304,19 @@
         height: 42px;
         margin: 0 0 0 20px;
         font-size: 18px;
+        position: relative;
+        z-index: 4;
     }
     .consultation_bg {
         margin-top: 40px;
         height: 281px;
         mix-blend-mode: multiply;
+        position: relative;
     }
     .consultation__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
         display: flex;
         justify-content: flex-end;
     }
