@@ -155,6 +155,17 @@
     z-index: 4;
 }
 
+@media (max-width: 576px) {
+    .yandex-conditions {
+        padding-top: 70px;
+    }
+    .yandex-conditions-image {
+        margin-top: 40px;
+        position: static;
+        max-width: 100%;
+    }
+}
+
 /* Advantages */
 .advantages {
     padding-top: 120px;
