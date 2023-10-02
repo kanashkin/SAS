@@ -124,6 +124,13 @@
     z-index: 4;
 }
 
+@media (max-width: 1880px) {
+    .rotate-img {
+        width: 40%;
+        bottom: 5%;
+    }
+}
+
 @media (max-width: 576px) {
     .process {
         padding-top: 70px;

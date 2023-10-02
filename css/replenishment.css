@@ -158,6 +158,13 @@
     z-index: 4;
 }
 
+@media (max-width: 1600px) {
+    .yandex-conditions-image {
+        width: 35%;
+        right: 1%;
+    }
+}
+
 @media (max-width: 576px) {
     .yandex-conditions {
         padding-top: 70px;
