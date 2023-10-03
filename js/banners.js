@@ -20,7 +20,7 @@ const createSwiper = () => {
 }
 
 const checkWidth = () => {
-    if (window.innerWidth <= 576) {
+    if (window.innerWidth <= 768) {
         createSwiper()
     } else {
         if (examplesSwiper) {

@@ -122,19 +122,30 @@
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+    .services__wrapper {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .animation__block {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
     .services {
         padding-top: 70px;
     }
     .services__wrapper {
-        flex-direction: column;
-        gap: 40px;
+        align-items: normal;
     }
     .animation__block {
         margin-top: 0;
-        width: auto;
-        height: auto;
-        background: none;
+        width: 300px;
+        height: 306px;
+        background: url('../img/services/services/common_bg-mobile.png')
+        center center / cover no-repeat;
     }
     .animation-trigger {
         display: none;
@@ -201,7 +212,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .additionaly {
         padding: 70px 0;
     }
@@ -257,7 +268,7 @@
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .consultation {
         padding: 0;
         padding-top: 70px;

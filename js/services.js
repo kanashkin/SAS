@@ -51,7 +51,10 @@ const additionalySwiper = new Swiper('.swiper-additionaly', {
         el: '.swiper-pagination'
     },
     breakpoints: {
-        577: {
+        769: {
+            slidesPerView: 2
+        },
+        1200: {
             slidesPerView: 3
         }
     }

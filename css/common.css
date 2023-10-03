@@ -103,7 +103,7 @@ li {
     background: rgba(245, 237, 243, 0.30);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .title {
         font-size: 28px;
     }
@@ -241,7 +241,18 @@ li {
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+    .header__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__wrapper {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .nav, .header__contacts {
         display: none;
     }
@@ -446,7 +457,7 @@ li {
     line-height: 100%;
 }
 
-@media (max-width: 576px)  {
+@media (max-width: 768px)  {
     .footer {
         padding: 60px 0 78px;
     }
@@ -575,7 +586,8 @@ li {
     width: 60px;
     background: url('../img/common/promo/check.svg') center center / cover no-repeat;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: -80px;
 }
 
@@ -597,7 +609,45 @@ li {
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+    .promo__title {
+        font-size: 44px;
+    }
+    .promo__subtitle {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .promo__button {
+        margin-top: 30px;
+        width: 350px;
+        font-size: 24px;
+    }
+    .promo__list {
+        margin-top: 30px;
+    }
+    .promo__list-item {
+        font-size: 20px;
+        margin-left: 50px;
+        height: auto;
+        min-height: 40px;
+    }
+    .promo__list-item::before {
+        width: 50px;
+        height: 50px;
+    }
+    .promo__image {
+        width: 40%;
+        max-height: 400px;
+
+    }
+    .promo__image img {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 110%;
+    }
+}
+
+@media (max-width: 768px) {
     .promo {
         padding: 30px 0 34px;
     }
@@ -633,6 +683,8 @@ li {
         width: 40px;
         height: 40px;
         left: -50px;
+        transform: none;
+        top: 0;
     }
     .promo__image {
         display: none;
@@ -665,7 +717,14 @@ li {
     transform: translateX(-43%) rotate(14deg);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+    .end img {
+        width: 70%;
+        height: 92%;
+    }
+}
+
+@media (max-width: 768px) {
     .end {
         height: 209px;
     }
@@ -701,7 +760,7 @@ li {
     background: linear-gradient(93deg, #F5166B 1.73%, #ED6923 100%);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .swiper-control {
         margin-top: 20px;
     }

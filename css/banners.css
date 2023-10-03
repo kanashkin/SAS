@@ -29,7 +29,17 @@
     line-height: 130%;
 }
 
-@media (max-width: 576px) {
+@media(max-width: 1200px) {
+    .descr {
+        padding: 50px;
+        padding-left: 0;
+    }
+    .descr__wrapper img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
     .descr {
         padding-top: 70px;
         position: relative;
@@ -131,7 +141,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .process {
         padding-top: 70px;
         overflow: hidden;
@@ -192,7 +202,7 @@
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .examples {
         padding: 0;
         padding-top: 70px;
@@ -284,7 +294,7 @@
     z-index: 4;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .price {
         padding: 0;
         padding-top: 70px;
