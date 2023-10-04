@@ -4,18 +4,18 @@ const servicesAnimation = () => {
 
     triggers.forEach(item => {
         item.addEventListener('mouseenter', () => {
-            let folder
+            let source
             if (item.classList.contains('development-trigger')) {
-                folder = 'services/development'
+                source = 'img/services/services/development/bg.png'
             } else if (item.classList.contains('seo-trigger')) {
-                folder = 'services/seo'
+                source = 'img/services/services/seo/bg.png'
             } else if (item.classList.contains('design-trigger')) {
-                folder = 'services/design'
+                source = 'img/services/services/design/bg.png'
             } else if (item.classList.contains('ppc-trigger')) {
-                folder = 'services/ppc'
+                source = 'img/services/services/ppc/bg.png'
             }
 
-            animationBlock.style.background = `url('../img/services/${folder}/bg.png') center center / cover no-repeat`
+            animationBlock.style.background = `url('${source}') center center / cover no-repeat`
         })
 
         item.addEventListener('mouseleave', () => {
